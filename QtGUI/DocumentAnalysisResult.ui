@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>DocumentAnalysisResult</class>
+    <widget class="QWidget" name="DocumentAnalysisResult">
+        <property name="windowTitle">
+            <string>Document Analysis Result</string>
+        </property>
+        <layout class="QVBoxLayout" name="mainLayout">
+            
+            <!-- Title and Edit Button -->
+            <item>
+                <layout class="QHBoxLayout" name="headerLayout">
+                    <item>
+                        <widget class="QLabel" name="titleLabel">
+                            <property name="text">
+                                <string>Document Analysis Result</string>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>14</pointsize>
+                                    <bold>true</bold>
+                                </font>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="editButton">
+                            <property name="text">
+                                <string>Edit</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </item>
+            
+            <!-- Financial Standing -->
+            <item>
+                <widget class="QFrame" name="financialStanding" >
+                    <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <layout class="QVBoxLayout">
+                        <item>
+                            <widget class="QLabel" name="financialLabel">
+                                <property name="text">
+                                    <string>Financial Standing</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="financialStatus">
+                                <property name="text">
+                                    <string>Unstable</string>
+                                </property>
+                                <property name="styleSheet">
+                                    <string>color: red;</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+            
+            <!-- Past Visa Records -->
+            <item>
+                <widget class="QFrame" name="pastVisaRecords">
+                    <layout class="QVBoxLayout">
+                        <item>
+                            <widget class="QLabel" name="visaLabel">
+                                <property name="text">
+                                    <string>Past Visa Records</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="visaApproved">
+                                <property name="text">
+                                    <string>3 Approved</string>
+                                </property>
+                                <property name="styleSheet">
+                                    <string>color: green;</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="visaRejected">
+                                <property name="text">
+                                    <string>5 Rejected</string>
+                                </property>
+                                <property name="styleSheet">
+                                    <string>color: red;</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+            
+            <!-- Approval Score (Circular Progress Bar) -->
+            <item>
+                <widget class="QFrame" name="approvalScoreFrame">
+                    <layout class="QVBoxLayout">
+                        <item>
+                            <widget class="QLabel" name="approvalLabel">
+                                <property name="text">
+                                    <string>Approval Score</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QProgressBar" name="approvalScoreBar">
+                                <property name="value">
+                                    <number>37</number>
+                                </property>
+                                <property name="format">
+                                    <string>%p%</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+            
+            <!-- Recommendations -->
+            <item>
+                <widget class="QFrame" name="recommendations">
+                    <layout class="QVBoxLayout">
+                        <item>
+                            <widget class="QLabel" name="recommendationsLabel">
+                                <property name="text">
+                                    <string>Recommendations</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="recommendationsText">
+                                <property name="text">
+                                    <string>Improve financial stability, submit missing documents, and reapply for visas carefully.</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+</ui>
