@@ -1,8 +1,6 @@
 <RCC>
-    <qresource prefix="/image">
+    <qresource prefix="/">
         <file>bg_image.png</file>
-    </qresource>
-    <qresource prefix="/icon">
         <file>notif_icon.png</file>
     </qresource>
 </RCC>
