@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1366</width>
-    <height>768</height>
+    <height>825</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -41,16 +41,28 @@
     <number>0</number>
    </property>
    <item>
-    <widget class="QFrame" name="nav_bar">
+    <widget class="QFrame" name="navbar">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
      </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
      <property name="styleSheet">
-      <string notr="true">#nav_bar {
+      <string notr="true">#navbar {
 	background-color: rgb(33, 158, 188);
+}
+
+QPushButton, QPushButton:flat {
+	background-color: rgb(0, 0, 0);
+	border-radius: 20px;
+	padding: 20 20;
+}
+QPushButton:hover {
+    background-color: rgb(99, 99, 99);
 }</string>
      </property>
      <property name="frameShape">
@@ -60,6 +72,9 @@
       <enum>QFrame::Shadow::Plain</enum>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+      </property>
       <property name="leftMargin">
        <number>10</number>
       </property>
@@ -73,9 +88,35 @@
        <number>30</number>
       </property>
       <item>
-       <widget class="QPushButton" name="account_button">
+       <widget class="QPushButton" name="navbar_account_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#navbar_account_button, #navbar_account_button:flat {
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 20px;
+	padding: 0 20;
+}
+#navbar_account_button:hover {
+    background-color: rgba(255, 255, 255, 0);
+}</string>
+        </property>
         <property name="text">
-         <string>Account</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>account_icon.png</normaloff>account_icon.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -90,17 +131,12 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="notif_button">
-        <property name="autoFillBackground">
-         <bool>true</bool>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-	background-color: rgb(0, 0, 0);
-}</string>
-        </property>
-        <property name="text">
-         <string/>
+       <widget class="QPushButton" name="navbar_notif_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
         <property name="icon">
          <iconset>
@@ -113,28 +149,49 @@
          <bool>false</bool>
         </property>
         <property name="flat">
-         <bool>true</bool>
+         <bool>false</bool>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="home_button">
-        <property name="text">
-         <string>Home</string>
+       <widget class="QPushButton" name="navbar_home_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>home_icon.png</normaloff>home_icon.png</iconset>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="application_button">
-        <property name="text">
-         <string>Application</string>
+       <widget class="QPushButton" name="navbar_application_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>application_icon.png</normaloff>application_icon.png</iconset>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="archive_button">
-        <property name="text">
-         <string>Archive</string>
+       <widget class="QPushButton" name="navbar_archive_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>archive_icon.png</normaloff>archive_icon.png</iconset>
         </property>
        </widget>
       </item>
@@ -152,9 +209,16 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="logout_button">
-        <property name="text">
-         <string>Logout</string>
+       <widget class="QPushButton" name="navbar_logout_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>logout_icon.png</normaloff>logout_icon.png</iconset>
         </property>
        </widget>
       </item>
@@ -171,18 +235,24 @@
      </property>
      <property name="styleSheet">
       <string notr="true">#current_tab {
-	padding: 30 10;
+	padding: 30 20 30 15;
 }
 QTableWidget {
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 30px;
+	border: 15 solid #E4EAFE;
 	margin: 10 20;
-	border: 10 solid #E4EAFE;
 }
-QHeaderView, QHeaderView::section {
+QHeaderView {
+    background-color: #E4EAFE;
+	border: 0px solid #E4EAFE;
+}
+ QHeaderView::section {
     background-color: #E4EAFE;
     color: black;
 	border: 0px solid #E4EAFE;
+	padding: 0 20;
+	font: bold 15px;
 }
 QHeaderView::section:hover
 {
@@ -205,9 +275,17 @@ QHeaderView::section:hover
 }
 #application_header_label {
 	color: white;
+	margin: 10;
+	font: bold 22px;
 }
 </string>
      </property>
+     <widget class="QWidget" name="account_tab">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="notif_tab"/>
      <widget class="QWidget" name="home_tab"/>
      <widget class="QWidget" name="application_tab">
       <property name="sizePolicy">
@@ -325,7 +403,7 @@ QHeaderView::section:hover
              <number>20</number>
             </property>
             <property name="bottomMargin">
-             <number>10</number>
+             <number>20</number>
             </property>
             <item>
              <widget class="QPushButton" name="new_application_button">
@@ -339,10 +417,16 @@ QHeaderView::section:hover
                <bool>false</bool>
               </property>
               <property name="styleSheet">
-               <string notr="true">background-color: #1A1F71;
+               <string notr="true">#new_application_button, #new_application_button:flat {
+background-color: #1A1F71;
 color: white;
 padding: 5 20;
-border-radius: 15px;</string>
+border-radius: 12px;
+border: 0px solid #1A1F71;
+}
+#new_application_button:hover {
+    background-color: rgb(99, 99, 99);
+}</string>
               </property>
               <property name="text">
                <string>New Application</string>
@@ -376,12 +460,6 @@ border-radius: 15px;</string>
       </layout>
      </widget>
      <widget class="QWidget" name="archive_tab"/>
-     <widget class="QWidget" name="account_tab">
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-     </widget>
-     <widget class="QWidget" name="notif_tab"/>
     </widget>
    </item>
   </layout>
