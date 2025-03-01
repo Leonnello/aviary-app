@@ -147,9 +147,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QListWidget" name="listWidget"/>
-    </item>
-    <item>
      <widget class="QLineEdit" name="lineEdit"/>
     </item>
    </layout>
