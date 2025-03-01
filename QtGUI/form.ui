@@ -3498,7 +3498,7 @@ background-color: #E4EAFE;
                        <widget class="QWidget" name="docs_file_container">
                         <property name="geometry">
                          <rect>
-                          <x>44</x>
+                          <x>51</x>
                           <y>0</y>
                           <width>900</width>
                           <height>120</height>
