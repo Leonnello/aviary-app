@@ -10,10 +10,44 @@ class LoginPage(QWidget):
         super().__init__()
         self = uic.loadUi("QtGUI/login.ui", self)
         
-        self.test_button.clicked.connect(self.on_login)
+        self.login_button.clicked.connect(self.on_login)
+        self.noacc_link.mousePressEvent = self.on_noacc_link_clicked
+        self.already_link.mousePressEvent = self.on_already_link_clicked
+        self.forgot_link.mousePressEvent = self.on_forgot_link_clicked
+        self.register_button.clicked.connect(self.on_register_clicked)
+        self.change_submit_button.clicked.connect(self.on_change_submit_clicked)
+        self.change_login_button.clicked.connect(self.on_change_login_clicked)
 
     def on_login(self):
         # insert login validation here
+
+        self.main_window = MainWindow()
+        self.main_window.show()
+        self.close()
+
+    def on_noacc_link_clicked(self, event):
+        self.currentPage.setCurrentIndex(1)
+
+    def on_already_link_clicked(self, event):
+        self.currentPage.setCurrentIndex(0)
+
+    def on_forgot_link_clicked(self, event):
+        self.currentPage.setCurrentIndex(2)
+
+    def on_register_clicked(self, event):
+        #register new account then login
+
+        self.main_window = MainWindow()
+        self.main_window.show()
+        self.close()
+
+    def on_change_submit_clicked(self, event):
+        #change passord
+
+        self.currentPage.setCurrentIndex(3)
+
+    def on_change_login_clicked(self, event):
+        #register new password then login
 
         self.main_window = MainWindow()
         self.main_window.show()
@@ -26,7 +60,7 @@ class MainWindow(QWidget):
         self = uic.loadUi("QtGUI/form.ui", self)
         
         # NOTE: Testing, remove later
-        self.test_button.clicked.connect(self.on_applicant_selected_clicked)
+        #self.login_button.clicked.connect(self.on_applicant_selected_clicked)
         
         # connect navbar buttons
         self.navbar_account_button.clicked.connect(self.on_navbar_account_button_clicked)
@@ -125,11 +159,15 @@ class MainWindow(QWidget):
 
     def on_navbar_logout_button_clicked(self):
         # insert logout here
-        pass
+
+        self.login_page = LoginPage()
+        self.login_page.show()
+        self.close()
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     login_page = LoginPage()
     login_page.show()
+    login_page.currentPage.setCurrentIndex(0);
     sys.exit(app.exec())
