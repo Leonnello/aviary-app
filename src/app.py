@@ -1,4 +1,6 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QHeaderView, QFrame
+from PyQt6.QtWidgets import QApplication, QWidget, QHeaderView
+from PyQt6.QtGui import QPixmap
+
 from PyQt6 import uic
 
 import sys
@@ -9,6 +11,11 @@ class LoginPage(QWidget):
     def __init__(self):
         super().__init__()
         self = uic.loadUi("QtGUI/login.ui", self)
+        
+        # pixmap = QPixmap("QtGUI/bg_image.jpg") # ugly bleh
+        
+        # self.Form
+        # self.AviaryAppGUI.setStyleSheet("background-image: url('bg_image.jpg');")
         
         self.login_button.clicked.connect(self.on_login)
         self.noacc_link.mousePressEvent = self.on_noacc_link_clicked
@@ -60,7 +67,7 @@ class MainWindow(QWidget):
         self = uic.loadUi("QtGUI/form.ui", self)
         
         # NOTE: Testing, remove later
-        #self.login_button.clicked.connect(self.on_applicant_selected_clicked)
+        self.test_button.clicked.connect(self.on_applicant_selected_clicked)
         
         # connect navbar buttons
         self.navbar_account_button.clicked.connect(self.on_navbar_account_button_clicked)
