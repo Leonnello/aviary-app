@@ -1,0 +1,452 @@
+[2025-03-07 07:56:41] local.ERROR: Command "make:auth" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:auth\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php:726)
+[stacktrace]
+#0 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(284): Symfony\\Component\\Console\\Application->find('make:auth')
+#1 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-03-07 08:25:52] local.ERROR: Command "make:auth" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:auth\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php:726)
+[stacktrace]
+#0 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(284): Symfony\\Component\\Console\\Application->find('make:auth')
+#1 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-03-07 08:43:16] local.ERROR: syntax error, unexpected token "endif", expecting end of file (View: C:\Users\Maglasang\Aviary\AviaryApp\resources\views\welcome.blade.php) {"exception":"[object] (Illuminate\\View\\ViewException(code: 0): syntax error, unexpected token \"endif\", expecting end of file (View: C:\\Users\\Maglasang\\Aviary\\AviaryApp\\resources\\views\\welcome.blade.php) at C:\\Users\\Maglasang\\Aviary\\AviaryApp\\storage\\framework\\views\\230ddb2bef69312642dd044e29fefe25.php:50)
+[stacktrace]
+#0 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(60): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ParseError), 1)
+#1 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(75): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\Maglas...', Array)
+#2 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(209): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\Maglas...', Array)
+#3 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(192): Illuminate\\View\\View->getContents()
+#4 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(161): Illuminate\\View\\View->renderContents()
+#5 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(79): Illuminate\\View\\View->render()
+#6 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(920): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#8 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(887): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#19 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#26 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#28 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#51 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Maglas...')
+#55 {main}
+
+[previous exception] [object] (ParseError(code: 0): syntax error, unexpected token \"endif\", expecting end of file at C:\\Users\\Maglasang\\Aviary\\AviaryApp\\storage\\framework\\views\\230ddb2bef69312642dd044e29fefe25.php:50)
+[stacktrace]
+#0 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#1 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\Maglas...', Array)
+#2 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(75): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\Maglas...', Array)
+#3 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(209): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\Maglas...', Array)
+#4 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(192): Illuminate\\View\\View->getContents()
+#5 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(161): Illuminate\\View\\View->renderContents()
+#6 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(79): Illuminate\\View\\View->render()
+#7 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#8 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(920): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#9 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(887): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#11 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(88): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#20 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(75): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#27 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#29 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#52 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#55 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\Maglas...')
+#56 {main}
+"} 
+[2025-03-07 08:47:48] local.ERROR: Command "make:auth" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:auth\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php:726)
+[stacktrace]
+#0 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(284): Symfony\\Component\\Console\\Application->find('make:auth')
+#1 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-03-07 09:05:06] local.ERROR: SQLSTATE[HY000]: General error: 1 table "users" already exists (Connection: sqlite, SQL: create table "users" ("id" integer primary key autoincrement not null, "created_at" datetime, "updated_at" datetime)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1 table \"users\" already exists (Connection: sqlite, SQL: create table \"users\" (\"id\" integer primary key autoincrement not null, \"created_at\" datetime, \"updated_at\" datetime)) at C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:823)
+[stacktrace]
+#0 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(777): Illuminate\\Database\\Connection->runQueryCallback('create table \"u...', Array, Object(Closure))
+#1 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(558): Illuminate\\Database\\Connection->run('create table \"u...', Array, Object(Closure))
+#2 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(120): Illuminate\\Database\\Connection->statement('create table \"u...')
+#3 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(619): Illuminate\\Database\\Schema\\Blueprint->build()
+#4 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(473): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#6 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\database\\migrations\\2025_03_07_090233_create_users_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(507): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#8 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(432): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#9 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(441): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#10 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(244): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#11 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(40): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(798): Illuminate\\Console\\View\\Components\\Task->render('2025_03_07_0902...', Object(Closure))
+#13 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(244): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2025_03_07_0902...', Object(Closure))
+#14 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(211): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Maglas...', 2, false)
+#15 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(138): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#16 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(117): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#17 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(658): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(110): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#19 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(89): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#20 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#21 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#23 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#24 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#25 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(213): Illuminate\\Container\\Container->call(Array)
+#26 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#28 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#34 {main}
+
+[previous exception] [object] (PDOException(code: HY000): SQLSTATE[HY000]: General error: 1 table \"users\" already exists at C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:563)
+[stacktrace]
+#0 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(563): PDO->prepare('create table \"u...')
+#1 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(810): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('create table \"u...', Array)
+#2 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(777): Illuminate\\Database\\Connection->runQueryCallback('create table \"u...', Array, Object(Closure))
+#3 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(558): Illuminate\\Database\\Connection->run('create table \"u...', Array, Object(Closure))
+#4 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(120): Illuminate\\Database\\Connection->statement('create table \"u...')
+#5 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(619): Illuminate\\Database\\Schema\\Blueprint->build()
+#6 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(473): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#7 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Database\\Schema\\Builder->create('users', Object(Closure))
+#8 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\database\\migrations\\2025_03_07_090233_create_users_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#9 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(507): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#10 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(432): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\SQLiteConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#11 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(441): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(244): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#13 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(40): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#14 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(798): Illuminate\\Console\\View\\Components\\Task->render('2025_03_07_0902...', Object(Closure))
+#15 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(244): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2025_03_07_0902...', Object(Closure))
+#16 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(211): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Maglas...', 2, false)
+#17 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(138): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#18 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(117): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#19 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(658): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#20 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(110): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#21 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(89): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->runMigrations()
+#22 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(213): Illuminate\\Container\\Container->call(Array)
+#28 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 C:\\Users\\Maglasang\\Aviary\\AviaryApp\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#36 {main}
+"} 
