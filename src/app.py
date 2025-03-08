@@ -12,11 +12,6 @@ class LoginPage(QWidget):
         super().__init__()
         self = uic.loadUi("QtGUI/login.ui", self)
         
-        # pixmap = QPixmap("QtGUI/bg_image.jpg") # ugly bleh
-        
-        # self.Form
-        # self.AviaryAppGUI.setStyleSheet("background-image: url('bg_image.jpg');")
-        
         self.login_button.clicked.connect(self.on_login)
         self.noacc_link.mousePressEvent = self.on_noacc_link_clicked
         self.already_link.mousePressEvent = self.on_already_link_clicked
@@ -91,6 +86,26 @@ class MainWindow(QWidget):
         self.selected_stat_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
         self.archive_table.resizeColumnsToContents()
         self.archive_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
+        
+        ### interactable QFrame
+        # Homepage
+        # Current Status
+        new_app = custom.InteractableFrame(self.curr_stat_new_applications_container)
+        pending_app = custom.InteractableFrame(self.curr_stat_pending_container)
+        awaiting_app = custom.InteractableFrame(self.curr_stat_awaiting_response_container)
+        approved_app = custom.InteractableFrame(self.curr_stat_approved_container)
+        denied_app = custom.InteractableFrame(self.curr_stat_denied_container)
+        # Task bar graphs
+        mon_bar = custom.InteractableFrame(self.mon_bar, "#219EBC")
+        tue_bar = custom.InteractableFrame(self.tue_bar, "#219EBC")
+        wed_bar = custom.InteractableFrame(self.wed_bar, "#219EBC")
+        thu_bar = custom.InteractableFrame(self.thu_bar, "#219EBC")
+        fri_bar = custom.InteractableFrame(self.fri_bar, "#219EBC")
+        sat_bar = custom.InteractableFrame(self.sat_bar, "#219EBC")
+        sun_bar = custom.InteractableFrame(self.sun_bar, "#219EBC")
+        
+        # connect interactableframe to leftClicked signal
+        new_app.leftClicked.connect(self.on_new_app_clicked)
 
     #### Navbar Button Functions
     def on_navbar_account_button_clicked(self):
@@ -139,6 +154,13 @@ class MainWindow(QWidget):
     
     def on_navbar_archive_button_clicked(self):
         self.current_tab.setCurrentIndex(4)
+
+    def on_navbar_logout_button_clicked(self):
+        # insert logout here
+
+        self.login_page = LoginPage()
+        self.login_page.show()
+        self.close()
     
     # NOTE: Need to pass selected applicant from table
     # NOTE: Need DB to be finished/established before I can continue this
@@ -164,12 +186,9 @@ class MainWindow(QWidget):
         self.current_tab.setCurrentIndex(7)
         self.application_form_header_label.setText("New Application")
 
-    def on_navbar_logout_button_clicked(self):
-        # insert logout here
-
-        self.login_page = LoginPage()
-        self.login_page.show()
-        self.close()
+    #### Interactable Frame Clicked Functions
+    def on_new_app_clicked(self):
+        print("new app clicked")
 
 
 if __name__ == '__main__':

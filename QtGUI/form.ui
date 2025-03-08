@@ -605,16 +605,7 @@ QHeaderView::section:hover
                         </sizepolicy>
                        </property>
                        <property name="styleSheet">
-                        <string notr="true">#curr_stat_new_applications_container, 
-#curr_stat_approved_container, 
-#curr_stat_awaiting_response_container, 
-#curr_stat_denied_container, 
-#curr_stat_pending_container {
-	background-color: #81CFE1;
-	border-radius: 20px;
-	border: 10 solid #81CFE1;
-	padding: 0 0 10;
-}</string>
+                        <string notr="true"/>
                        </property>
                        <layout class="QHBoxLayout" name="horizontalLayout_2">
                         <property name="spacing">
@@ -649,8 +640,16 @@ QHeaderView::section:hover
                             <height>0</height>
                            </size>
                           </property>
+                          <property name="layoutDirection">
+                           <enum>Qt::LayoutDirection::LeftToRight</enum>
+                          </property>
                           <property name="styleSheet">
-                           <string notr="true"/>
+                           <string notr="true">#curr_stat_new_applications_container {
+	background-color: #81CFE1;
+	border-radius: 20px;
+	border: 10 solid #81CFE1;
+	padding: 0 0 10;
+}</string>
                           </property>
                           <property name="frameShape">
                            <enum>QFrame::Shape::StyledPanel</enum>
@@ -718,6 +717,8 @@ QHeaderView::section:hover
                             </widget>
                            </item>
                           </layout>
+                          <zorder>curr_stat_new_applications_label</zorder>
+                          <zorder>curr_stat_new_applications_count</zorder>
                          </widget>
                         </item>
                         <item>
@@ -735,7 +736,12 @@ QHeaderView::section:hover
                            </size>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true"/>
+                           <string notr="true">#curr_stat_pending_container {
+	background-color: #81CFE1;
+	border-radius: 20px;
+	border: 10 solid #81CFE1;
+	padding: 0 0 10;
+}</string>
                           </property>
                           <property name="frameShape">
                            <enum>QFrame::Shape::StyledPanel</enum>
@@ -820,7 +826,12 @@ QHeaderView::section:hover
                            </size>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true"/>
+                           <string notr="true">#curr_stat_awaiting_response_container {
+	background-color: #81CFE1;
+	border-radius: 20px;
+	border: 10 solid #81CFE1;
+	padding: 0 0 10;
+}</string>
                           </property>
                           <property name="frameShape">
                            <enum>QFrame::Shape::StyledPanel</enum>
@@ -905,7 +916,12 @@ QHeaderView::section:hover
                            </size>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true"/>
+                           <string notr="true">#curr_stat_approved_container {
+	background-color: #81CFE1;
+	border-radius: 20px;
+	border: 10 solid #81CFE1;
+	padding: 0 0 10;
+}</string>
                           </property>
                           <property name="frameShape">
                            <enum>QFrame::Shape::StyledPanel</enum>
@@ -990,7 +1006,12 @@ QHeaderView::section:hover
                            </size>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true"/>
+                           <string notr="true">#curr_stat_denied_container {
+	background-color: #81CFE1;
+	border-radius: 20px;
+	border: 10 solid #81CFE1;
+	padding: 0 0 10;
+}</string>
                           </property>
                           <property name="frameShape">
                            <enum>QFrame::Shape::StyledPanel</enum>
@@ -1344,17 +1365,7 @@ color: rgb(26, 31, 113);
                            </size>
                           </property>
                           <property name="styleSheet">
-                           <string notr="true">#mon_bar, 
-#tue_bar, 
-#wed_bar,
-#thu_bar,
-#fri_bar,
-#sat_bar,
-#sun_bar {
-background-color: #219EBC;
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-}</string>
+                           <string notr="true"/>
                           </property>
                           <layout class="QHBoxLayout" name="horizontalLayout_4">
                            <property name="spacing">
@@ -1394,7 +1405,7 @@ border-top-right-radius: 5px;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QWidget" name="mon_bar" native="true">
+                              <widget class="QFrame" name="mon_bar">
                                <property name="sizePolicy">
                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                  <horstretch>0</horstretch>
@@ -1406,6 +1417,13 @@ border-top-right-radius: 5px;
                                  <width>29</width>
                                  <height>20</height>
                                 </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">#mon_bar {
+background-color: #219EBC;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}</string>
                                </property>
                               </widget>
                              </item>
@@ -1460,7 +1478,7 @@ border-top-right-radius: 5px;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QWidget" name="tue_bar" native="true">
+                              <widget class="QFrame" name="tue_bar">
                                <property name="sizePolicy">
                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                  <horstretch>0</horstretch>
@@ -1472,6 +1490,13 @@ border-top-right-radius: 5px;
                                  <width>29</width>
                                  <height>10</height>
                                 </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">#tue_bar {
+background-color: #219EBC;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}</string>
                                </property>
                               </widget>
                              </item>
@@ -1526,7 +1551,7 @@ border-top-right-radius: 5px;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QWidget" name="wed_bar" native="true">
+                              <widget class="QFrame" name="wed_bar">
                                <property name="sizePolicy">
                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                  <horstretch>0</horstretch>
@@ -1538,6 +1563,13 @@ border-top-right-radius: 5px;
                                  <width>29</width>
                                  <height>10</height>
                                 </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">#wed_bar {
+background-color: #219EBC;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}</string>
                                </property>
                               </widget>
                              </item>
@@ -1592,7 +1624,7 @@ border-top-right-radius: 5px;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QWidget" name="thu_bar" native="true">
+                              <widget class="QFrame" name="thu_bar">
                                <property name="sizePolicy">
                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                  <horstretch>0</horstretch>
@@ -1604,6 +1636,13 @@ border-top-right-radius: 5px;
                                  <width>29</width>
                                  <height>10</height>
                                 </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">#thu_bar {
+background-color: #219EBC;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}</string>
                                </property>
                               </widget>
                              </item>
@@ -1658,7 +1697,7 @@ border-top-right-radius: 5px;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QWidget" name="fri_bar" native="true">
+                              <widget class="QFrame" name="fri_bar">
                                <property name="sizePolicy">
                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                  <horstretch>0</horstretch>
@@ -1670,6 +1709,13 @@ border-top-right-radius: 5px;
                                  <width>29</width>
                                  <height>10</height>
                                 </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">#fri_bar {
+background-color: #219EBC;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}</string>
                                </property>
                               </widget>
                              </item>
@@ -1724,7 +1770,7 @@ border-top-right-radius: 5px;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QWidget" name="sat_bar" native="true">
+                              <widget class="QFrame" name="sat_bar">
                                <property name="sizePolicy">
                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                  <horstretch>0</horstretch>
@@ -1736,6 +1782,13 @@ border-top-right-radius: 5px;
                                  <width>29</width>
                                  <height>10</height>
                                 </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">#sat_bar {
+background-color: #219EBC;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}</string>
                                </property>
                               </widget>
                              </item>
@@ -1790,7 +1843,7 @@ border-top-right-radius: 5px;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QWidget" name="sun_bar" native="true">
+                              <widget class="QFrame" name="sun_bar">
                                <property name="sizePolicy">
                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                                  <horstretch>0</horstretch>
@@ -1802,6 +1855,13 @@ border-top-right-radius: 5px;
                                  <width>29</width>
                                  <height>10</height>
                                 </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">#sun_bar {
+background-color: #219EBC;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}</string>
                                </property>
                               </widget>
                              </item>
