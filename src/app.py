@@ -1,5 +1,4 @@
 from PyQt6.QtWidgets import QApplication, QWidget, QHeaderView
-from PyQt6.QtGui import QPixmap
 
 from PyQt6 import uic
 
@@ -21,7 +20,7 @@ class LoginPage(QWidget):
         self.change_login_button.clicked.connect(self.on_change_login_clicked)
 
     def on_login(self):
-        # insert login validation here
+        # NOTE: insert login validation here
 
         self.main_window = MainWindow()
         self.main_window.show()
@@ -37,19 +36,19 @@ class LoginPage(QWidget):
         self.currentPage.setCurrentIndex(2)
 
     def on_register_clicked(self, event):
-        #register new account then login
+        # NOTE: register new account then login
 
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
 
     def on_change_submit_clicked(self, event):
-        #change passord
+        # NOTE: change passord
 
         self.currentPage.setCurrentIndex(3)
 
     def on_change_login_clicked(self, event):
-        #register new password then login
+        # NOTE: register new password then login
 
         self.main_window = MainWindow()
         self.main_window.show()
@@ -78,7 +77,7 @@ class MainWindow(QWidget):
         self.edit_button.clicked.connect(self.on_edit_button_clicked)
         self.edit_button_2.clicked.connect(self.on_edit_button_clicked)
 
-        # REVISE: move to separate function later
+        # NOTE REVISE: move to separate function later
         # resize table cols to header/content
         self.application_table.resizeColumnsToContents()
         self.application_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
@@ -86,6 +85,10 @@ class MainWindow(QWidget):
         self.selected_stat_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
         self.archive_table.resizeColumnsToContents()
         self.archive_table.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
+        
+        # Drag n Drog for File Upload
+        upload_area = custom.UploadFrame(self.docs_body_container)
+        upload_area.fileDropped.connect(self.on_new_file_uploaded)
         
         ### interactable QFrame
         # Homepage
@@ -180,7 +183,7 @@ class MainWindow(QWidget):
         self.current_tab.setCurrentIndex(7)
         self.application_form_header_label.setText("Edit Application")
         
-        # insert code to populate saved data here
+        # NOTE: insert code to populate saved data here
         
     def on_new_application_button_clicked(self):
         self.current_tab.setCurrentIndex(7)
@@ -190,6 +193,14 @@ class MainWindow(QWidget):
     def on_new_app_clicked(self):
         print("new app clicked")
 
+    #### File Upload
+    def on_new_file_uploaded(self, file_name):
+        new_file_interactable = custom.FileObjectFrame(file_name, self.docs_file_container)
+        
+        self.docs_file_container.layout().setSpacing(10)
+        self.docs_file_container.layout().addWidget(new_file_interactable)
+        
+        
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
