@@ -45,7 +45,7 @@ class LoginPage(QWidget):
         #self.change_login_button.clicked.connect(self.on_change_login_clicked)
         self.google_login_button.clicked.connect(self.login_with_google)
 
-        self.register_send_button.clicked.connect(lambda: self.send_verification_email(self.register_send_button))
+        self.register_send_button.clicked.connect(self.send_verification_email)
         self.change_back_button.clicked.connect(lambda: self.currentPage.setCurrentIndex(0))
 
         self.user_id_token = None
@@ -61,7 +61,7 @@ class LoginPage(QWidget):
         if os.path.exists("google_login_success.txt"):
             with open("google_login_success.txt", "r") as f:
                 self.user_id_token = f.read().strip()
-            os.remove("google_login_success.txt")  # Clean up
+            os.remove("google_login_success.txt")
 
             QMessageBox.information(self, "Success", "Google login successful!")
             self.open_main_window()
@@ -109,7 +109,7 @@ class LoginPage(QWidget):
         self.currentPage.setCurrentIndex(0)
 
     def on_forgot_link_clicked(self, event):
-        email = self.lineEdit_3.text().strip()  # Assuming this is where the email is entered
+        email = self.login_username.text().strip()  # Assuming this is where the email is entered
 
         if not email:
             QMessageBox.warning(self, "Error", "Email cannot be empty!")
@@ -138,8 +138,8 @@ class LoginPage(QWidget):
 
             else:
                 QMessageBox.information(self, "Success", "Email is registered. Proceeding to change password.")
-                self.currentPage.setCurrentIndex(2) #Go to Change password1
-                self.lineEdit_4.setText(email)
+                self.currentPage.setCurrentIndex(2) #go to Change password1
+                self.register_email.setText(email)
 
     def on_register_clicked(self, event):
         email = self.register_email.text().strip()
@@ -150,7 +150,7 @@ class LoginPage(QWidget):
             QMessageBox.warning(self, "Error", "All fields must be filled!")
             return
 
-        #Fetch stored verification code
+        #fetch stored verification code
         db_url =  f"{FIREBASE_DB_URL}/verification_codes/{email.replace('.', ',')}.json"
 
         response = requests.get(db_url)
@@ -166,7 +166,7 @@ class LoginPage(QWidget):
             QMessageBox.warning(self, "Error", "Invalid verification code!")
             return
 
-        #Register user in Firebase Auth
+        #register user in Firebase Auth
         url = f"https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={FIREBASE_API_KEY}"
         payload = {
             "email": email,
@@ -183,16 +183,8 @@ class LoginPage(QWidget):
             error_msg = data.get("error", {}).get("message", "Registration failed!")
             QMessageBox.warning(self, "Error", error_msg)
 
-    def send_verification_email(self, sender_button):
-            if sender_button == self.register_send_button:
-                email_line_edit = self.lineEdit
-            elif sender_button == self.change_send_button:
-                email_line_edit = self.lineEdit_4
-            else:
-                QMessageBox.warning(self, "Error", "Unknown button trigger!")
-                return
-
-            email = email_line_edit.text().strip()
+    def send_verification_email(self):
+            email = self.register_email.text().strip()
 
             if not email:
                 QMessageBox.warning(self, "Error", "Email cannot be empty!")
@@ -200,7 +192,7 @@ class LoginPage(QWidget):
 
             verification_code = str(random.randint(100000, 999999))  #generate a 6-digit code
 
-            #Send Email via SendGrid
+            #send Email via SendGrid
             message = Mail(
                 from_email=SENDER_EMAIL,
                 to_emails=email,
@@ -273,7 +265,7 @@ def google_callback():
     if "id_token" in data:
         id_token = data["id_token"]
 
-        # Sign in to Firebase with the ID token
+        #sign in to Firebase with the ID token
         firebase_url = f"https://identitytoolkit.googleapis.com/v1/accounts:signInWithIdp?key={FIREBASE_API_KEY}"
         firebase_payload = {
             "postBody": f"id_token={id_token}&providerId=google.com",
@@ -287,7 +279,7 @@ def google_callback():
 
         if "idToken" in firebase_data:
             with open("google_login_success.txt", "w") as f:
-                f.write(firebase_data["idToken"])  # Store token for PyQt to read
+                f.write(firebase_data["idToken"])  #store token for pyqt to read
             return "Login successful! You can close this window."
         else:
             return "Firebase authentication failed."
