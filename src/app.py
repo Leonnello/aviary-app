@@ -1,4 +1,5 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QHeaderView
+from PyQt6.QtWidgets import QApplication, QWidget, QHeaderView, QMessageBox
+from database import Database 
 
 from PyQt6 import uic
 
@@ -9,7 +10,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self = uic.loadUi("QtGUI/form.ui", self)
-        
+        self.db = Database()
         # NOTE: Testing, remove later
         self.test_button.clicked.connect(self.on_applicant_selected_clicked)
         

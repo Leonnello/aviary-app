@@ -168,7 +168,7 @@
          </size>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="loginPage">
          <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -253,7 +253,7 @@
 	border-radius: 20px;
 }
 
-#lineEdit_3{
+#login_username{
 	background-color: #FFFFFF;
 	border-radius: 20px;
 }</string>
@@ -279,7 +279,7 @@
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_3">
+                  <widget class="QLineEdit" name="login_username">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -527,7 +527,7 @@
 	border-radius: 20px;
 }
 
-#lineEdit_10{
+#login_password{
 	background-color: #FFFFFF;
 	border-radius: 20px;
 }</string>
@@ -553,7 +553,7 @@
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_10">
+                  <widget class="QLineEdit" name="login_password">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -997,7 +997,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 	border-radius: 20px;
 }
 
-#lineEdit{
+#register_email{
 	background-color: #FFFFFF;
 	border-radius: 20px;
 }</string>
@@ -1023,7 +1023,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit">
+                  <widget class="QLineEdit" name="register_email">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -1271,7 +1271,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
 	border-radius: 20px;
 }
 
-#lineEdit_6{
+#register_password{
 	background-color: #FFFFFF;
 	border-radius: 20px;
 }</string>
@@ -1297,7 +1297,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_6">
+                  <widget class="QLineEdit" name="register_password">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -1556,7 +1556,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     background-color: #43DBFF;
 }
 
-#lineEdit_8{
+#register_verification{
 	background-color: #FFFFFF;
 	border-radius: 20px;
 }
@@ -1584,7 +1584,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_8">
+                  <widget class="QLineEdit" name="register_verification">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -2227,13 +2227,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  <property name="frameShadow">
                   <enum>QFrame::Shadow::Raised</enum>
                  </property>
-                 <widget class="QLabel" name="label_25">
+                 <widget class="QLabel" name="label_31">
                   <property name="geometry">
                    <rect>
-                    <x>0</x>
-                    <y>10</y>
-                    <width>507</width>
-                    <height>72</height>
+                    <x>100</x>
+                    <y>20</y>
+                    <width>301</width>
+                    <height>51</height>
                    </rect>
                   </property>
                   <property name="font">
@@ -2254,7 +2254,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>61</width>
+                    <width>51</width>
                     <height>31</height>
                    </rect>
                   </property>
@@ -2375,7 +2375,15 @@ li.checked::marker { content: &quot;\2612&quot;; }
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true"/>
+                   <string notr="true">#change_back_button{
+	background-color: #219EBC;
+	border-radius: 15px;
+}
+
+#change_back_button:hover {
+    background-color: #43DBFF;
+}
+</string>
                   </property>
                   <property name="text">
                    <string>Back</string>
@@ -2694,7 +2702,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="geometry">
                    <rect>
                     <x>150</x>
-                    <y>0</y>
+                    <y>10</y>
                     <width>191</width>
                     <height>41</height>
                    </rect>
@@ -2953,7 +2961,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_5">
+                  <widget class="QLineEdit" name="changepass_new_pass">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -3256,7 +3264,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_13">
+                  <widget class="QLineEdit" name="changepass_verify_pass">
                    <property name="geometry">
                     <rect>
                      <x>50</x>

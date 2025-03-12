@@ -71,8 +71,8 @@ class LoginPage(QWidget):
         QTimer.singleShot(1000, self.check_google_login)
 
     def on_login(self):
-        email = self.lineEdit_3.text().strip()
-        password = self.lineEdit_10.text().strip()
+        email = self.login_username.text().strip()
+        password = self.login_password.text().strip()
 
         if not email or not password:
             QMessageBox.warning(self, "Error", "Email and password cannot be empty!")
@@ -142,9 +142,9 @@ class LoginPage(QWidget):
                 self.lineEdit_4.setText(email)
 
     def on_register_clicked(self, event):
-        email = self.lineEdit.text().strip()
-        password = self.lineEdit_6.text().strip()
-        entered_code = self.lineEdit_8.text().strip()
+        email = self.register_email.text().strip()
+        password = self.register_password.text().strip()
+        entered_code = self.register_verification.text().strip()
 
         if not email or not password or not entered_code:
             QMessageBox.warning(self, "Error", "All fields must be filled!")
@@ -249,41 +249,7 @@ class LoginPage(QWidget):
             error_msg = data.get("error", {}).get("message", "Failed to send reset email!")
             QMessageBox.warning(self, "Error", error_msg)
 
-"""[Deprecated]
-    def on_change_login_clicked(self, event):
-        new_password = self.lineEdit_5.text().strip()
-        confirm_password = self.lineEdit_13.text().strip()
-
-        if not new_password or not confirm_password:
-            QMessageBox.warning(self, "Error", "Both password fields are required!")
-            return
-
-        if new_password != confirm_password:
-            QMessageBox.warning(self, "Error", "Passwords do not match!")
-            return
-
-        if not hasattr(self, "oob_code") or not self.oob_code:
-            QMessageBox.warning(self, "Error", "Verification required! Please verify your email first.")
-            return
-
-        #change password using oobcode
-        url = f"https://identitytoolkit.googleapis.com/v1/accounts:resetPassword?key={FIREBASE_API_KEY}"
-        payload = {
-            "oobCode": self.oob_code,
-            "newPassword": new_password
-        }
-
-        response = requests.post(url, json=payload)
-        data = response.json()
-
-        if "email" in data:
-            QMessageBox.information(self, "Success", "Password changed successfully! Please log in.")
-            self.currentPage.setCurrentIndex(0) #go to login page
-        else:
-            error_msg = data.get("error", {}).get("message", "Failed to change password!")
-            QMessageBox.warning(self, "Error", error_msg)
-"""
-
+################################"""Google login server stuff"""################################
 @app.route("/callback")
 def google_callback():
     """Handles OAuth2 response from Google."""
@@ -327,6 +293,7 @@ def google_callback():
             return "Firebase authentication failed."
 
     return jsonify(data)
+
 def shutdown_flask():
     """Stop Flask server after login"""
     requests.get("http://127.0.0.1:5000/shutdown")
