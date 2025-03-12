@@ -33,8 +33,6 @@ class LoginPage(QWidget):
             self.main_window.show()
             self.close()
             
-        else:
-            QMessageBox.warning(self, "Login Failed", "Invalid username or password.")
 
         # self.main_window = MainWindow()
         # self.main_window.show()
