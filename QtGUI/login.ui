@@ -164,7 +164,7 @@
          </size>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="loginPage">
          <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -275,7 +275,7 @@
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_3">
+                  <widget class="QLineEdit" name="login_username">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -549,7 +549,7 @@
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_10">
+                  <widget class="QLineEdit" name="login_password">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -1019,7 +1019,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit">
+                  <widget class="QLineEdit" name="register_email">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -1293,7 +1293,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_6">
+                  <widget class="QLineEdit" name="register_password">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -1580,7 +1580,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_8">
+                  <widget class="QLineEdit" name="register_verification">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -2175,7 +2175,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_4">
+                  <widget class="QLineEdit" name="changepass_email">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -2588,7 +2588,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_12">
+                  <widget class="QLineEdit" name="changepass_verification">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -3128,7 +3128,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_5">
+                  <widget class="QLineEdit" name="changepass_new_pass">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -3431,7 +3431,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <property name="frameShadow">
                    <enum>QFrame::Shadow::Raised</enum>
                   </property>
-                  <widget class="QLineEdit" name="lineEdit_13">
+                  <widget class="QLineEdit" name="changepass_verify_pass">
                    <property name="geometry">
                     <rect>
                      <x>50</x>
