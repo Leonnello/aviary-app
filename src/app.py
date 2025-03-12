@@ -1,4 +1,5 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QHeaderView
+from PyQt6.QtWidgets import QApplication, QWidget, QHeaderView, QMessageBox
+from database import Database 
 
 from PyQt6 import uic
 
@@ -10,6 +11,7 @@ class LoginPage(QWidget):
     def __init__(self):
         super().__init__()
         self = uic.loadUi("QtGUI/login.ui", self)
+        seld.db = Database ()
         
         self.login_button.clicked.connect(self.on_login)
         self.noacc_link.mousePressEvent = self.on_noacc_link_clicked
@@ -19,8 +21,18 @@ class LoginPage(QWidget):
         self.change_submit_button.clicked.connect(self.on_change_submit_clicked)
         self.change_login_button.clicked.connect(self.on_change_login_clicked)
 
+        if self.db.validate_user(username, password):
+            QMessageBox.information(self, "Login Success", "Welcome, " + username)
+            self.main_window = MainWindow()
+            self.main_window.show()
+            self.close()
+            
+        else:
+            QMessageBox.warning(self, "Login Failed", "Invalid username or password.")
+
     def on_login(self):
-        # NOTE: insert login validation here
+        username = self.username_input.text()
+        password = self.password_input.text()
 
         self.main_window = MainWindow()
         self.main_window.show()
@@ -36,12 +48,18 @@ class LoginPage(QWidget):
         self.currentPage.setCurrentIndex(2)
 
     def on_register_clicked(self, event):
-        # NOTE: register new account then login
+        username = self.username_input.text()
+        password = self.password_input.text()
 
+        if self.db.register_user(username, password):
+            QMessageBox.information(self, "Registration Success", "Account created! Please log in.")
+        else:
+            QMessageBox.warning(self, "Registration Failed", "Username already taken.")
+        
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
+        
     def on_change_submit_clicked(self, event):
         # NOTE: change passord
 
@@ -59,7 +77,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self = uic.loadUi("QtGUI/form.ui", self)
-        
+        self.db = Database()
         # NOTE: Testing, remove later
         self.test_button.clicked.connect(self.on_applicant_selected_clicked)
         
