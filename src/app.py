@@ -106,10 +106,19 @@ class MainWindow(QWidget):
         fri_bar = custom.InteractableFrame(self.fri_bar, "#219EBC")
         sat_bar = custom.InteractableFrame(self.sat_bar, "#219EBC")
         sun_bar = custom.InteractableFrame(self.sun_bar, "#219EBC")
+        # Applicant Report page
+        past_approved = custom.InteractableFrame(self.past_approved, "#81E1BB") 
+        past_denied = custom.InteractableFrame(self.past_denied, "#E18181") 
+        missing_docs = custom.InteractableFrame(self.missing_docs, "#E18181") 
         
         # connect interactableframe to leftClicked signal
-        new_app.leftClicked.connect(self.on_new_app_clicked)
-
+        new_app.leftClicked.connect(self.on_new_application_button_clicked)
+        pending_app.leftClicked.connect(lambda: self.display_table(self.selected_stat_table, "pending_app"))
+        awaiting_app.leftClicked.connect(lambda: self.display_table(self.selected_stat_table, "awaiting_app"))
+        approved_app.leftClicked.connect(lambda: self.display_table(self.selected_stat_table, "approved_app"))
+        denied_app.leftClicked.connect(lambda: self.display_table(self.selected_stat_table, "denied_app"))
+            
+            
     #### Navbar Button Functions
     def on_navbar_account_button_clicked(self):
         self.current_tab.setCurrentIndex(0)
@@ -190,8 +199,43 @@ class MainWindow(QWidget):
         self.application_form_header_label.setText("New Application")
 
     #### Interactable Frame Clicked Functions
-    def on_new_app_clicked(self):
-        print("new app clicked")
+    
+
+    #### QTable Manipulation Functions
+    def display_table(self, table_widget, db_name):
+        print(table_widget, db_name)
+        
+        # NOTE: insert code to handle the ff
+        # get db columns as QTableWidget headers
+        # get rows from db and display to QTableWidget
+        
+        if db_name == "pending_app":
+            # NOTE: Filter Case Status == Pending on db
+            # display results to QTableWidget
+            # COLUMNS: Applicant Name, Missing Document, For Document Replacement, Mising Data
+            
+            self.selected_stat_label.setText("Pending")
+            pass
+        elif db_name == "awaiting_app":
+            # COLUMNS: Applicant Name, Visa Type, Submitted at
+            
+            self.selected_stat_label.setText("Awaiting")
+            pass
+        elif db_name == "approved_app":
+            # COLUMNS: Applicant Name, Visa Type, Processed at
+            
+            self.selected_stat_label.setText("Approved")
+            pass
+        elif db_name == "denied_app":
+            # COLUMNS: Applicant Name, Visa Type, Processed at, Recommendation Text
+            
+            self.selected_stat_label.setText("Denied")
+            pass
+        
+        
+        pass
+    
+    
 
     #### File Upload
     def on_new_file_uploaded(self, file_name):
@@ -200,7 +244,17 @@ class MainWindow(QWidget):
         self.docs_file_container.layout().setSpacing(10)
         self.docs_file_container.layout().addWidget(new_file_interactable)
         
+    #### General helper functions
+    # format tablewidget row to dict
+    def format_data(self, table_widget, selected_row):
+        formatted_data = {}
         
+        # get text for each cell in a row
+        for col in range(table_widget.columnCount()):
+            data = table_widget.item(selected_row, col)
+            formatted_data[table_widget.horizontalHeaderItem(col).text()] = data.text()
+        
+        return formatted_data
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
