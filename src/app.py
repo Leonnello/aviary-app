@@ -11,7 +11,7 @@ class LoginPage(QWidget):
     def __init__(self):
         super().__init__()
         self = uic.loadUi("QtGUI/login.ui", self)
-        seld.db = Database ()
+        self.db = Database ()
         
         self.login_button.clicked.connect(self.on_login)
         self.noacc_link.mousePressEvent = self.on_noacc_link_clicked
@@ -21,6 +21,12 @@ class LoginPage(QWidget):
         self.change_submit_button.clicked.connect(self.on_change_submit_clicked)
         self.change_login_button.clicked.connect(self.on_change_login_clicked)
 
+        
+
+    def on_login(self):
+        username = self.login_username.text()
+        password = self.login_password.text()
+        
         if self.db.validate_user(username, password):
             QMessageBox.information(self, "Login Success", "Welcome, " + username)
             self.main_window = MainWindow()
@@ -30,13 +36,9 @@ class LoginPage(QWidget):
         else:
             QMessageBox.warning(self, "Login Failed", "Invalid username or password.")
 
-    def on_login(self):
-        username = self.username_input.text()
-        password = self.password_input.text()
-
-        self.main_window = MainWindow()
-        self.main_window.show()
-        self.close()
+        # self.main_window = MainWindow()
+        # self.main_window.show()
+        # self.close()
 
     def on_noacc_link_clicked(self, event):
         self.currentPage.setCurrentIndex(1)
@@ -48,10 +50,10 @@ class LoginPage(QWidget):
         self.currentPage.setCurrentIndex(2)
 
     def on_register_clicked(self, event):
-        username = self.username_input.text()
-        password = self.password_input.text()
+        email = self.register_email.text()
+        password = self.register_password.text()
 
-        if self.db.register_user(username, password):
+        if self.db.register_user(email, password):
             QMessageBox.information(self, "Registration Success", "Account created! Please log in.")
         else:
             QMessageBox.warning(self, "Registration Failed", "Username already taken.")
