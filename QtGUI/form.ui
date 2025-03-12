@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>AviaryAppGUI</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>assets/logo/aviaryLogo.png</normaloff>assets/logo/aviaryLogo.png</iconset>
+  </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
