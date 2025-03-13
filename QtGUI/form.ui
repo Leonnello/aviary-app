@@ -278,6 +278,13 @@ QTableWidget {
 	border-radius: 30px;
 	border: 15px solid #E4EAFE;
 }
+QTableCornerButton::section{
+background-color: #E4EAFE;
+}
+
+QHeaderWidget {
+    background-color: #E4EAFE;
+}
 QHeaderView {
     background-color: #E4EAFE;
 	border: 0px solid #E4EAFE;
@@ -1637,6 +1644,12 @@ margin: 0 10;
                        </property>
                        <property name="lineWidth">
                         <number>0</number>
+                       </property>
+                       <property name="selectionMode">
+                        <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+                       </property>
+                       <property name="selectionBehavior">
+                        <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
                        </property>
                        <column>
                         <property name="text">
@@ -3024,6 +3037,18 @@ margin: 10 20;
                <property name="lineWidth">
                 <number>0</number>
                </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+               </property>
+               <attribute name="verticalHeaderVisible">
+                <bool>true</bool>
+               </attribute>
+               <attribute name="verticalHeaderHighlightSections">
+                <bool>false</bool>
+               </attribute>
                <column>
                 <property name="text">
                  <string>Applicant Name</string>
@@ -3204,6 +3229,12 @@ margin: 10 20;
                <property name="lineWidth">
                 <number>0</number>
                </property>
+               <property name="selectionMode">
+                <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+               </property>
+               <property name="selectionBehavior">
+                <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+               </property>
                <column>
                 <property name="text">
                  <string>Applicant Name</string>
@@ -3273,13 +3304,6 @@ border: 0px solid #1A1F71;
                  </property>
                  <property name="flat">
                   <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QPushButton" name="test_button">
-                 <property name="text">
-                  <string>Send to Applicant Profile for Testing</string>
                  </property>
                 </widget>
                </item>
@@ -16359,6 +16383,25 @@ border: 0px solid #219EBC;
                   </property>
                  </widget>
                 </item>
+                <item>
+                 <widget class="QPushButton" name="change_stat_button">
+                  <property name="styleSheet">
+                   <string notr="true">#change_stat_button, #change_stat_button:flat {
+background-color: #219EBC;
+color: white;
+padding: 10 40;
+border-radius: 15px;
+border: 0px solid #219EBC;
+}
+#change_stat_button:hover {
+    background-color: rgb(99, 99, 99);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Change Status</string>
+                  </property>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -18253,6 +18296,11 @@ margin: 10 20;
                          <string>Female</string>
                         </property>
                        </item>
+                       <item>
+                        <property name="text">
+                         <string>Other</string>
+                        </property>
+                       </item>
                       </widget>
                      </item>
                     </layout>
@@ -18270,7 +18318,11 @@ margin: 10 20;
                       </widget>
                      </item>
                      <item>
-                      <widget class="QDateEdit" name="birthday_selector"/>
+                      <widget class="QDateEdit" name="birthday_selector">
+                       <property name="displayFormat">
+                        <string>yyyy-MM-dd</string>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </item>
@@ -18884,54 +18936,6 @@ margin: 10 20;
                        <item>
                         <property name="text">
                          <string>No</string>
-                        </property>
-                       </item>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QVBoxLayout" name="employment_region">
-                     <property name="spacing">
-                      <number>0</number>
-                     </property>
-                     <item>
-                      <widget class="QLabel" name="employment_region_label">
-                       <property name="text">
-                        <string>Region of Employment</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QComboBox" name="employment_region_combobox">
-                       <item>
-                        <property name="text">
-                         <string>Select Region</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Island</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Midwest</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>Northeast</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>South</string>
-                        </property>
-                       </item>
-                       <item>
-                        <property name="text">
-                         <string>West</string>
                         </property>
                        </item>
                       </widget>
