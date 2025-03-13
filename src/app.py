@@ -6,73 +6,6 @@ from PyQt6 import uic
 import sys
 import custom_gui_classes as custom
 
-
-class LoginPage(QWidget):
-    def __init__(self):
-        super().__init__()
-        self = uic.loadUi("QtGUI/login.ui", self)
-        self.db = Database ()
-        
-        self.login_button.clicked.connect(self.on_login)
-        self.noacc_link.mousePressEvent = self.on_noacc_link_clicked
-        self.already_link.mousePressEvent = self.on_already_link_clicked
-        self.forgot_link.mousePressEvent = self.on_forgot_link_clicked
-        self.register_button.clicked.connect(self.on_register_clicked)
-        self.change_submit_button.clicked.connect(self.on_change_submit_clicked)
-        self.change_login_button.clicked.connect(self.on_change_login_clicked)
-
-        
-
-    def on_login(self):
-        username = self.login_username.text()
-        password = self.login_password.text()
-        
-        if self.db.validate_user(username, password):
-            QMessageBox.information(self, "Login Success", "Welcome, " + username)
-            self.main_window = MainWindow()
-            self.main_window.show()
-            self.close()
-            
-
-        # self.main_window = MainWindow()
-        # self.main_window.show()
-        # self.close()
-
-    def on_noacc_link_clicked(self, event):
-        self.currentPage.setCurrentIndex(1)
-
-    def on_already_link_clicked(self, event):
-        self.currentPage.setCurrentIndex(0)
-
-    def on_forgot_link_clicked(self, event):
-        self.currentPage.setCurrentIndex(2)
-
-    def on_register_clicked(self, event):
-        email = self.register_email.text()
-        password = self.register_password.text()
-
-        if self.db.register_user(email, password):
-            QMessageBox.information(self, "Registration Success", "Account created! Please log in.")
-        else:
-            QMessageBox.warning(self, "Registration Failed", "Username already taken.")
-        
-        self.main_window = MainWindow()
-        self.main_window.show()
-        self.close()
-        
-    def on_change_submit_clicked(self, event):
-        # NOTE: change passord
-
-        self.currentPage.setCurrentIndex(3)
-
-    def on_change_login_clicked(self, event):
-        # NOTE: register new password then login
-
-        self.main_window = MainWindow()
-        self.main_window.show()
-        self.close()
-
-
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
@@ -187,9 +120,15 @@ class MainWindow(QWidget):
 
     def on_navbar_logout_button_clicked(self):
         # insert logout here
+        from login_page import LoginPage
+
+        #issue: somehow 3 login instances show up after logging out
+        if hasattr(self, "login_page") and self.login_page is not None:
+            self.login_page.close()  #Ensure previous instance is closed
 
         self.login_page = LoginPage()
         self.login_page.show()
+        self.login_page.currentPage.setCurrentIndex(0)
         self.close()
     
     # NOTE: Need to pass selected applicant from table
@@ -275,6 +214,7 @@ class MainWindow(QWidget):
         return formatted_data
 
 if __name__ == '__main__':
+    from login_page import LoginPage
     app = QApplication(sys.argv)
     login_page = LoginPage()
     login_page.show()
