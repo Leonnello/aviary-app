@@ -23,11 +23,11 @@ How to Use
 
 5. Monitor Updates – Get real-time status updates.
 
-6.Final Review – Visa agents review special cases.
+6. Final Review – Visa agents review special cases.
 
 
 
-#Important Notes!!# 
+Important Notes!!
 
 > AI predictions are helpful but not guaranteed.
 
