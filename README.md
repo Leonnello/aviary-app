@@ -1,4 +1,4 @@
-# aviary-app
+# AVIARY
 automated visa approval request yielder 
 
 # Aviary/Visa AI App - README
