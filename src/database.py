@@ -19,7 +19,7 @@ class Database:
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS application (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                applicant_name TEXT NOT NULL,
+                applicant_name TEXT NOT NULL UNIQUE,
                 first_name TEXT NOT NULL,
                 middle_name TEXT,
                 last_name TEXT NOT NULL,

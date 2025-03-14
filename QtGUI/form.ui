@@ -159,7 +159,7 @@ QPushButton:hover {
          <item>
           <widget class="QLabel" name="username_label">
            <property name="text">
-            <string>janedoe</string>
+            <string>juana</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -630,7 +630,7 @@ QHeaderView::section:hover
                              </font>
                             </property>
                             <property name="text">
-                             <string>Juan Dela Cruz</string>
+                             <string>Juana Dela Cruz</string>
                             </property>
                            </widget>
                           </item>
@@ -1261,7 +1261,7 @@ QHeaderView::section:hover
                               <string notr="true">color: rgb(26, 31, 113);</string>
                              </property>
                              <property name="text">
-                              <string>10</string>
+                              <string>6</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -1351,7 +1351,7 @@ QHeaderView::section:hover
                               <string notr="true">color: rgb(26, 31, 113);</string>
                              </property>
                              <property name="text">
-                              <string>12</string>
+                              <string>0</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -1441,7 +1441,7 @@ QHeaderView::section:hover
                               <string notr="true">color: rgb(26, 31, 113);</string>
                              </property>
                              <property name="text">
-                              <string>21</string>
+                              <string>2</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignmentFlag::AlignCenter</set>
